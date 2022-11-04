@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+    <title>Your Bookmarks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Bookmarks Page</h1>
+
+ <div>
+    <a href="/logout">Logout</a>
+    <a href="/profile">Search for more movies here!</a>
+</div>
+
+    <main>
+
+
+<div id="result">
+
+    <% for(var i=0; i<messages.length; i++) {%>
+        <% if (user.local.email === messages[i].email) { %>
+        <div class="card">
+            <img src="<%= messages[i].imglink %>"
+                  class="card-img-top" alt="<%= messages[i].name %>">
+              <div class="card-body">
+                  <h5 class="card-title"><%= messages[i].name %></h5>
+                  <span>Rate this movie: </span>
+                  <select name="" id="ratings">
+                    <option value="0">0</option>
+                    <option value="1">1</option> 
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                  <h5>Your Rating: <span><%= messages[i].rating %></span></h5>
+                  <button class="delete" data-imglink="<%= messages[i].imglink %>" data-name="<%= messages[i].name %>">Delete Bookmark</button>
+              </div>
+          </div>
+      <% } %>
+      <% } %>
+</div>
+       
+    </main>
+
+
+
+
+
+
+
+
+<script src="bookmark.js"></script>
+</body>
+</html>
