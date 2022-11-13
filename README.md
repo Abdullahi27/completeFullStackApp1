@@ -1,13 +1,5 @@
-## Installation
+## Bookmark Your Favorite Movies
 
-1. Clone repo
-2. run `npm install`
+<img width="1456" alt="FSapp1" src="https://user-images.githubusercontent.com/111465917/201546834-e485722b-0c33-41ae-a5c2-50151aa3bad6.png">
 
-## Usage
-
-1. run `node server.js`
-2. Navigate to `localhost:8080`
-
-## Credit
-
-Modified from Scotch.io's auth tutorial
+This website allows you to login and search for your favorite movies and bookmark them. You can also rate the movie!
